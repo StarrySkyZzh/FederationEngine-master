@@ -1,0 +1,3 @@
+cases.case_id,id,promis3_cases
+cases.incident_type,incident_type
+cases.involvement_type,involvement_type

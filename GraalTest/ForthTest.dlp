@@ -1,0 +1,26 @@
+@prefix : <>
+@prefix class: <http://unisa.edu.au/KSE.owl/class#>
+@prefix attribute: <http://unisa.edu.au/KSE.owl/attribute#>
+@prefix relationship: <http://unisa.edu.au/KSE.owl/relationship#>
+
+
+
+
+class:Person(ID, ADDONCONS_Type) :- :persons(ID, FN, LN, Age), ADDONCONS_Type = <Person>.
+class:PersonName(ID) :- :persons(ID, FN, LN, Age).
+class:Location(ID) :- :location(ID, Address).
+
+class:People(IDe) :- class:Man(ID).
+class:People(ID) :- class:Woman(ID).
+class:People(ID) :- :persons(ID, FN, LN, Age).
+class:Man(ID) :- :persons(ID, FN, LN, Age).
+class:Woman(ID) :- :persons(ID, FN, LN, Age).
+
+attribute:Age(ID,Age) :- :persons(ID, FN, LN, Age).
+attribute:FN(ID,FN) :- :persons(ID, FN, LN, Age).
+attribute:LN(ID,LN) :- :persons(ID, FN, LN, Age).
+attribute:Address(ID, Address) :- :location(ID, Address).
+relationship:hasPN(X,Y) :- :relationship(ID,X,XN,Y,YN,<hasPN>).
+relationship:lives_in(X,Y) :- :relationship(ID,X,XN,Y,YN,<lives_in>).
+relationship:works_at(X,Y) :- :relationship(ID,X,XN,Y,YN,<works_at>).
+

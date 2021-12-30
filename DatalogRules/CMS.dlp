@@ -1,0 +1,16 @@
+@prefix : <>
+@prefix class: <http://unisa.edu.au/KSE.owl/class#>
+@prefix attribute: <http://unisa.edu.au/KSE.owl/attribute#>
+@prefix relationship: <http://unisa.edu.au/KSE.owl/relationship#>
+
+class:Case(ID) :- cms_cases(ID,X1,X2,X3).
+class:Document(ID) :- cms_documents(ID,X1,X2,X3).
+class:Location(ID) :- cms_locations(ID,X1,X2,X3,X4,X5,X6).
+class:Person(ID) :- cms_persons(ID,X1,X2,X3,X4,X5,X6,X7,X8,X9,X10).
+class:Contact(ID) :- cms_contact_numbers(ID,X1,X2).
+
+relationship:Person_Case(ID1,ID2) :- cms_persons_cases(ID1,ID2,RT).
+relationship:Case_Document(ID1,ID2) :- cms_cases_documents(ID1,ID2,RT).
+relationship:Person_Contact(ID1,ID2) :- cms_persons_contact_numbers(ID1,ID2,RT).
+relationship:Person_Location(ID1,ID2) :- cms_persons_locations(ID1,ID2,RT).
+relationship:Person_Person(ID1,ID2) :- cms_persons_persons(ID1,ID2,RT).

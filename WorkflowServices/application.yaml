@@ -1,0 +1,14 @@
+camunda.bpm:
+    admin-user:
+        id: demo
+        password: demo
+        firstName: Kermit
+    filter:
+        create: All tasks
+    database:
+          schema-update: false
+spring.datasource:
+  url: jdbc:postgresql://103.61.226.39:5432/camunda
+  username: unisa
+  password: unisa
+  driver-class-name: org.postgresql.Driver

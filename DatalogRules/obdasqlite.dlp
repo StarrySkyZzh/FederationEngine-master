@@ -1,0 +1,24 @@
+@prefix : <>
+@prefix class: <http://unisa.edu.au/KSE.owl/class#>
+@prefix attribute: <http://unisa.edu.au/KSE.owl/attribute#>
+@prefix relationship: <http://unisa.edu.au/KSE.owl/relationship#>
+
+class:Person(ID) :- attribute:Age(ID,Age).
+class:PersonName(ID) :- attribute:FN(ID,FN).
+class:PersonName(ID) :- attribute:LN(ID,LN).
+class:Location(ID) :- attribute:Address(ID,Address).
+
+relationship:hasPN(X,Y), class:PersonName(Y):- class:Person(X).
+relationship:lives_in(X,Y), class:Location(Y):- class:Person(X).
+relationship:works_at(X,Y), class:Location(Y):- class:Person(X).
+
+class:Person(ID) :- :persons(ID, FN, LN, Age).
+class:PersonName(ID) :- :persons(ID, FN, LN, Age).
+class:Location(ID) :- :location(ID, Address).
+attribute:Age(ID,Age) :- :persons(ID, FN, LN, Age).
+attribute:FN(ID,FN) :- :persons(ID, FN, LN, Age).
+attribute:LN(ID,LN) :- :persons(ID, FN, LN, Age).
+attribute:Address(ID, Address) :- :location(ID, Address).
+relationship:hasPN(X,Y) :- :relationship(ID,X,XN,Y,YN,<hasPN>).
+relationship:lives_in(X,Y) :- :relationship(ID,X,XN,Y,YN,<lives_in>).
+relationship:works_at(X,Y) :- :relationship(ID,X,XN,Y,YN,<works_at>).

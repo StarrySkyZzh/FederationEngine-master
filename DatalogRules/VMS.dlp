@@ -1,0 +1,10 @@
+@prefix : <>
+@prefix class: <http://unisa.edu.au/KSE.owl/class#>
+@prefix attribute: <http://unisa.edu.au/KSE.owl/attribute#>
+@prefix relationship: <http://unisa.edu.au/KSE.owl/relationship#>
+
+
+class:Person(ID) :- vms_persons(ID,X1,X2,X3,X4,X5).
+class:Vehicle(ID) :- vms_vehicles(ID,X1,X2,X3,X4,X5,X6).
+
+relationship:Person_Vehicle(ID1,ID2) :- vms_persons_vehicles(ID1,ID2,RT).

@@ -1,0 +1,3 @@
+persons.id,person_id,promis4_persons
+locations.id,location_id
+cases.case_id,id

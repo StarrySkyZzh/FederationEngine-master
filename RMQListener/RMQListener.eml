@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component LANGUAGE_LEVEL="JDK_1_5" jdk="1.8" jdk_type="JavaSDK">
+	<output-test url="file://$MODULE_DIR$/target/test-classes"/>
+	<contentEntry url="file://$MODULE_DIR$">
+		<excludeFolder url="file://$MODULE_DIR$/target"/>
+	</contentEntry>
+	<levels>
+		<level name="Maven: org.apache.logging.log4j:log4j-core:2.7" value="project"/>
+		<level name="Maven: org.apache.logging.log4j:log4j-api:2.7" value="project"/>
+		<level name="Maven: com.rabbitmq:amqp-client:3.6.4" value="project"/>
+	</levels>
+</component>

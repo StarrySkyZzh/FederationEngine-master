@@ -1,0 +1,2 @@
+22 Mar 2018 14:24:30,940 [main] ERROR LogAcide - configuration/configuration.properties (No such file or directory)
+22 Mar 2018 14:24:30,942 [main] ERROR LogAcide - 

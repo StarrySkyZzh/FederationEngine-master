@@ -1,0 +1,11 @@
+locations.location_id,id,promis3_locations
+locations.city_town,city_town
+locations.country_code,country
+locations.creator_id,user_entry
+locations.date_created,date_created
+locations.pcode,pcode
+locations.state,state
+locations.street_name1,street_name
+locations.street_no,street_number
+locations.street_type,street_type
+locations.title,title

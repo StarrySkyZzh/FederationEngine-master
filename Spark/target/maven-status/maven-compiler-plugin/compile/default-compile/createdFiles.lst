@@ -1,0 +1,10 @@
+edu/unisa/ile/spark/java/RemoteWordCount.class
+edu/unisa/ile/RMQListener/MessageObject.class
+edu/unisa/ile/RMQListener/RMQListenerv2$1.class
+edu/unisa/ile/spark/java/SimpleApp$2.class
+edu/unisa/ile/hdfs/IOFunctions.class
+edu/unisa/ile/spark/java/SimpleApp.class
+edu/unisa/ile/spark/java/SparkFunctions.class
+edu/unisa/ile/RMQListener/Logging.class
+edu/unisa/ile/RMQListener/RMQListenerv2.class
+edu/unisa/ile/spark/java/SimpleApp$1.class

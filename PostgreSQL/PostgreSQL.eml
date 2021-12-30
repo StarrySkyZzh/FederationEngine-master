@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component LANGUAGE_LEVEL="JDK_1_5" jdk="1.8" jdk_type="JavaSDK">
+	<output-test url="file://$MODULE_DIR$/target/test-classes"/>
+	<contentEntry url="file://$MODULE_DIR$">
+		<excludeFolder url="file://$MODULE_DIR$/target"/>
+	</contentEntry>
+	<levels>
+		<level name="Maven: org.postgresql:postgresql:9.3-1100-jdbc41" value="project"/>
+		<level name="Maven: com.impossibl.pgjdbc-ng:pgjdbc-ng:complete:0.6" value="project"/>
+		<level name="Maven: io.netty:netty-all:4.0.32.Final" value="project"/>
+		<level name="Maven: com.jolbox:bonecp:0.8.0.RELEASE" value="project"/>
+		<level name="Maven: com.google.guava:guava:15.0" value="project"/>
+		<level name="Maven: org.slf4j:slf4j-api:1.7.2" value="project"/>
+	</levels>
+</component>

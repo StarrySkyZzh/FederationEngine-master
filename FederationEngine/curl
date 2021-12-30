@@ -1,0 +1,24 @@
+Find entities query format:
+curl -H "Content-Type: application/json" -X POST -d
+'{
+"query":{"scope":["person"],"output":{"project":{"id":"true"}},"filter":{"$or":[{"given_name1":"john"},{"last_name":"smith"}]}},
+"control":{"operation":"findEntities","sources":["promis"]},
+"credentials":{"credentiallist":[{"es":{"username":"unisaile","password":"unisaile"}},{"promis":{"username":"unisa","password":"unisa"}}]}
+}'
+http://127.0.0.1:8090/query
+
+
+
+
+Find entities by keyword query format:
+curl -H "Content-Type: application/json" -X POST -d
+'{
+"query":{"scope":[],"output":{"project":{}},"filter":{"keywords":["john","smith","blue"],"mode":"any"}},
+"control":{"operation":"findEntitiesByKeyword","sources":["promis"]},
+"credentials":{"credentiallist":[{"es":{"username":"unisaile","password":"unisaile"}},
+{"promis":{"username":"unisa","password":"unisa"}},
+{"poler":{"username":"poler","password":"nefUphuch!ahE"}}]}
+}'
+http://127.0.0.1:8090/query
+
+

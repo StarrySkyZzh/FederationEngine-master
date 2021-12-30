@@ -1,0 +1,9 @@
+edu/unisa/ile/PromisUpdatePipeline/Watcher/Main$1.class
+edu/unisa/ile/PromisUpdatePipeline/RMQListener/RMQListenerv1$1.class
+edu/unisa/ile/PromisUpdatePipeline/RMQListener/RMQListenerv1.class
+edu/unisa/ile/PromisUpdatePipeline/Watcher/NotificationListener.class
+edu/unisa/ile/PromisUpdatePipeline/Watcher/SerialisablePGNotification.class
+edu/unisa/ile/PromisUpdatePipeline/Logging/Logging.class
+edu/unisa/ile/PromisUpdatePipeline/Watcher/Main.class
+edu/unisa/ile/PromisUpdatePipeline/Watcher/RMQDispatcher.class
+edu/unisa/ile/PromisUpdatePipeline/Watcher/PGNotificationWatcher.class

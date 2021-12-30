@@ -1,0 +1,417 @@
+16:23:53.231 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Execute query: ANS(X,Age,Y) : [http://unisa.edu.au/KSE.owl/attribute#Age\2(X,Age), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y)]
+| ANS(X,Age,Y) : [persons\4(X,1,2,Age), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y)]
+| ANS(X,Age,Y) : [relationship\6(X91903010,X,X91903012,Y,X91903014,works_at), http://unisa.edu.au/KSE.owl/attribute#Age\2(X,Age)]
+| ANS(X,Age,Y) : [relationship\6(X91903010,X,X91903012,Y,X91903014,works_at), persons\4(X,1,2,Age)]
+| 
+16:23:53.235 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Solver: class fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism
+16:23:53.285 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.natural.NaturalConjunctiveQueryTranslator - Generated SQL query :ANS(X,Age,Y) : [relationship\6(X91903010,X,X91903012,Y,X91903014,works_at), persons\4(X,1,2,Age)] --> SELECT DISTINCT atom1.person_id as X, atom1.age as Age, atom0.y_id as Y FROM RELATIONSHIP as atom0, PERSONS as atom1 WHERE atom0.x_id = atom1.person_id AND atom0.relationship = 'works_at'
+16:23:53.285 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism - SELECT DISTINCT atom1.person_id as X, atom1.age as Age, atom0.y_id as Y FROM RELATIONSHIP as atom0, PERSONS as atom1 WHERE atom0.x_id = atom1.person_id AND atom0.relationship = 'works_at'
+16:39:47.028 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Execute query: ANS(X,Age,Y) : [http://unisa.edu.au/KSE.owl/attribute#Age\2(X,Age), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y)]
+| ANS(X,Age,Y) : [persons\4(X,1,2,Age), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y)]
+| ANS(X,Age,Y) : [relationship\6(X12788528080,X,X12788528082,Y,X12788528084,works_at), http://unisa.edu.au/KSE.owl/attribute#Age\2(X,Age)]
+| ANS(X,Age,Y) : [relationship\6(X12788528080,X,X12788528082,Y,X12788528084,works_at), persons\4(X,1,2,Age)]
+| 
+16:39:47.034 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Solver: class fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism
+16:39:47.088 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.natural.NaturalConjunctiveQueryTranslator - Generated SQL query :ANS(X,Age,Y) : [relationship\6(X12788528080,X,X12788528082,Y,X12788528084,works_at), persons\4(X,1,2,Age)] --> SELECT DISTINCT atom1.person_id as X, atom1.age as Age, atom0.y_id as Y FROM RELATIONSHIP as atom0, PERSONS as atom1 WHERE atom0.x_id = atom1.person_id AND atom0.relationship = 'works_at'
+16:39:47.088 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism - SELECT DISTINCT atom1.person_id as X, atom1.age as Age, atom0.y_id as Y FROM RELATIONSHIP as atom0, PERSONS as atom1 WHERE atom0.x_id = atom1.person_id AND atom0.relationship = 'works_at'
+16:40:03.611 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Execute query: ANS(X,Age,Y) : [http://unisa.edu.au/KSE.owl/attribute#Age\2(X,Age), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y)]
+| ANS(X,Age,Y) : [persons\4(X,1,2,Age), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y)]
+| ANS(X,Age,Y) : [relationship\6(X9457227240,X,X9457227242,Y,X9457227244,works_at), http://unisa.edu.au/KSE.owl/attribute#Age\2(X,Age)]
+| ANS(X,Age,Y) : [relationship\6(X9457227240,X,X9457227242,Y,X9457227244,works_at), persons\4(X,1,2,Age)]
+| 
+16:40:03.614 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Solver: class fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism
+16:40:03.680 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.natural.NaturalConjunctiveQueryTranslator - Generated SQL query :ANS(X,Age,Y) : [relationship\6(X9457227240,X,X9457227242,Y,X9457227244,works_at), persons\4(X,1,2,Age)] --> SELECT DISTINCT atom1.person_id as X, atom1.age as Age, atom0.y_id as Y FROM RELATIONSHIP as atom0, PERSONS as atom1 WHERE atom0.x_id = atom1.person_id AND atom0.relationship = 'works_at'
+16:40:03.680 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism - SELECT DISTINCT atom1.person_id as X, atom1.age as Age, atom0.y_id as Y FROM RELATIONSHIP as atom0, PERSONS as atom1 WHERE atom0.x_id = atom1.person_id AND atom0.relationship = 'works_at'
+17:20:17.576 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Execute query: ANS(X,Y) : [http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), location\2(Y,1)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), location\2(Y,1)]
+| ANS(X,Y) : [persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), location\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X9457227240,X,X9457227242,Y,X9457227244,works_at), http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [relationship\6(X9457227240,X,X9457227242,Y,X9457227244,works_at), http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X9457227240,X,X9457227242,Y,X9457227244,works_at), http://unisa.edu.au/KSE.owl/class#Person\1(X), location\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X9457227240,X,X9457227242,Y,X9457227244,works_at), http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [relationship\6(X9457227240,X,X9457227242,Y,X9457227244,works_at), http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X9457227240,X,X9457227242,Y,X9457227244,works_at), http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), location\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X9457227240,X,X9457227242,Y,X9457227244,works_at), persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [relationship\6(X9457227240,X,X9457227242,Y,X9457227244,works_at), persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X9457227240,X,X9457227242,Y,X9457227244,works_at), persons\4(X,1,2,3), location\2(Y,1)]
+| 
+17:20:17.580 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Solver: class fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism
+17:20:17.806 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.natural.NaturalConjunctiveQueryTranslator - Generated SQL query :ANS(X,Y) : [relationship\6(X9457227240,X,X9457227242,Y,X9457227244,works_at), persons\4(X,1,2,3), location\2(Y,1)] --> SELECT DISTINCT atom1.person_id as X, atom2.id as Y FROM RELATIONSHIP as atom0, PERSONS as atom1, LOCATION as atom2 WHERE atom0.x_id = atom1.person_id AND atom0.y_id = atom2.id AND atom1.first_name = atom2.address AND atom0.relationship = 'works_at'
+17:20:17.806 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism - SELECT DISTINCT atom1.person_id as X, atom2.id as Y FROM RELATIONSHIP as atom0, PERSONS as atom1, LOCATION as atom2 WHERE atom0.x_id = atom1.person_id AND atom0.y_id = atom2.id AND atom1.first_name = atom2.address AND atom0.relationship = 'works_at'
+17:22:36.957 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Execute query: ANS(X,Y) : [http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y)]
+| ANS(X,Y) : [persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y)]
+| ANS(X,Y) : [relationship\6(X9457227240,X,X9457227242,Y,X9457227244,works_at), http://unisa.edu.au/KSE.owl/class#Person\1(X)]
+| ANS(X,Y) : [relationship\6(X9457227240,X,X9457227242,Y,X9457227244,works_at), http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1)]
+| ANS(X,Y) : [relationship\6(X9457227240,X,X9457227242,Y,X9457227244,works_at), persons\4(X,1,2,3)]
+| 
+17:22:36.959 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Solver: class fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism
+17:22:37.037 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.natural.NaturalConjunctiveQueryTranslator - Generated SQL query :ANS(X,Y) : [relationship\6(X9457227240,X,X9457227242,Y,X9457227244,works_at), persons\4(X,1,2,3)] --> SELECT DISTINCT atom1.person_id as X, atom0.y_id as Y FROM RELATIONSHIP as atom0, PERSONS as atom1 WHERE atom0.x_id = atom1.person_id AND atom0.relationship = 'works_at'
+17:22:37.038 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism - SELECT DISTINCT atom1.person_id as X, atom0.y_id as Y FROM RELATIONSHIP as atom0, PERSONS as atom1 WHERE atom0.x_id = atom1.person_id AND atom0.relationship = 'works_at'
+17:24:13.351 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Execute query: ANS(X,Y) : [http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), location\2(Y,1)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), location\2(Y,1)]
+| ANS(X,Y) : [persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), location\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X91903010,X,X91903012,Y,X91903014,works_at), http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [relationship\6(X91903010,X,X91903012,Y,X91903014,works_at), http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X91903010,X,X91903012,Y,X91903014,works_at), http://unisa.edu.au/KSE.owl/class#Person\1(X), location\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X91903010,X,X91903012,Y,X91903014,works_at), http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [relationship\6(X91903010,X,X91903012,Y,X91903014,works_at), http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X91903010,X,X91903012,Y,X91903014,works_at), http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), location\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X91903010,X,X91903012,Y,X91903014,works_at), persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [relationship\6(X91903010,X,X91903012,Y,X91903014,works_at), persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X91903010,X,X91903012,Y,X91903014,works_at), persons\4(X,1,2,3), location\2(Y,1)]
+| 
+17:24:13.354 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Solver: class fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism
+17:24:13.561 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.natural.NaturalConjunctiveQueryTranslator - Generated SQL query :ANS(X,Y) : [relationship\6(X91903010,X,X91903012,Y,X91903014,works_at), persons\4(X,1,2,3), location\2(Y,1)] --> SELECT DISTINCT atom1.person_id as X, atom2.id as Y FROM PERSONS as atom1, RELATIONSHIP as atom0, LOCATION as atom2 WHERE atom0.x_id = atom1.person_id AND atom0.y_id = atom2.id AND atom1.first_name = atom2.address AND atom0.relationship = 'works_at'
+17:24:13.562 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism - SELECT DISTINCT atom1.person_id as X, atom2.id as Y FROM PERSONS as atom1, RELATIONSHIP as atom0, LOCATION as atom2 WHERE atom0.x_id = atom1.person_id AND atom0.y_id = atom2.id AND atom1.first_name = atom2.address AND atom0.relationship = 'works_at'
+14:50:34.084 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Execute query: ANS(X,Y) : [http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), location\2(Y,1)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), location\2(Y,1)]
+| ANS(X,Y) : [persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), location\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X18864918340,X,X18864918342,Y,X18864918344,works_at), http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [relationship\6(X18864918340,X,X18864918342,Y,X18864918344,works_at), http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X18864918340,X,X18864918342,Y,X18864918344,works_at), http://unisa.edu.au/KSE.owl/class#Person\1(X), location\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X18864918340,X,X18864918342,Y,X18864918344,works_at), http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [relationship\6(X18864918340,X,X18864918342,Y,X18864918344,works_at), http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X18864918340,X,X18864918342,Y,X18864918344,works_at), http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), location\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X18864918340,X,X18864918342,Y,X18864918344,works_at), persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [relationship\6(X18864918340,X,X18864918342,Y,X18864918344,works_at), persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X18864918340,X,X18864918342,Y,X18864918344,works_at), persons\4(X,1,2,3), location\2(Y,1)]
+| 
+14:50:34.090 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Solver: class fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism
+14:50:34.315 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.natural.NaturalConjunctiveQueryTranslator - Generated SQL query :ANS(X,Y) : [relationship\6(X18864918340,X,X18864918342,Y,X18864918344,works_at), persons\4(X,1,2,3), location\2(Y,1)] --> SELECT DISTINCT atom1.person_id as X, atom2.id as Y FROM PERSONS as atom1, RELATIONSHIP as atom0, LOCATION as atom2 WHERE atom0.x_id = atom1.person_id AND atom0.y_id = atom2.id AND atom1.first_name = atom2.address AND atom0.relationship = 'works_at'
+14:50:34.315 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism - SELECT DISTINCT atom1.person_id as X, atom2.id as Y FROM PERSONS as atom1, RELATIONSHIP as atom0, LOCATION as atom2 WHERE atom0.x_id = atom1.person_id AND atom0.y_id = atom2.id AND atom1.first_name = atom2.address AND atom0.relationship = 'works_at'
+14:51:06.350 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Execute query: ANS(X,Y) : [http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y)]
+| ANS(X,Y) : [persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y)]
+| ANS(X,Y) : [relationship\6(X17814936320,X,X17814936322,Y,X17814936324,works_at), http://unisa.edu.au/KSE.owl/class#Person\1(X)]
+| ANS(X,Y) : [relationship\6(X17814936320,X,X17814936322,Y,X17814936324,works_at), http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1)]
+| ANS(X,Y) : [relationship\6(X17814936320,X,X17814936322,Y,X17814936324,works_at), persons\4(X,1,2,3)]
+| 
+14:51:06.353 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Solver: class fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism
+14:51:06.504 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.natural.NaturalConjunctiveQueryTranslator - Generated SQL query :ANS(X,Y) : [relationship\6(X17814936320,X,X17814936322,Y,X17814936324,works_at), persons\4(X,1,2,3)] --> SELECT DISTINCT atom1.person_id as X, atom0.y_id as Y FROM RELATIONSHIP as atom0, PERSONS as atom1 WHERE atom0.x_id = atom1.person_id AND atom0.relationship = 'works_at'
+14:51:06.504 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism - SELECT DISTINCT atom1.person_id as X, atom0.y_id as Y FROM RELATIONSHIP as atom0, PERSONS as atom1 WHERE atom0.x_id = atom1.person_id AND atom0.relationship = 'works_at'
+14:51:19.529 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Execute query: ANS(X,Y) : [http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), location\2(Y,1)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), location\2(Y,1)]
+| ANS(X,Y) : [persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), location\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X18864918340,X,X18864918342,Y,X18864918344,works_at), http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [relationship\6(X18864918340,X,X18864918342,Y,X18864918344,works_at), http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X18864918340,X,X18864918342,Y,X18864918344,works_at), http://unisa.edu.au/KSE.owl/class#Person\1(X), location\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X18864918340,X,X18864918342,Y,X18864918344,works_at), http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [relationship\6(X18864918340,X,X18864918342,Y,X18864918344,works_at), http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X18864918340,X,X18864918342,Y,X18864918344,works_at), http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), location\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X18864918340,X,X18864918342,Y,X18864918344,works_at), persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [relationship\6(X18864918340,X,X18864918342,Y,X18864918344,works_at), persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X18864918340,X,X18864918342,Y,X18864918344,works_at), persons\4(X,1,2,3), location\2(Y,1)]
+| 
+14:51:19.534 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Solver: class fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism
+14:51:19.761 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.natural.NaturalConjunctiveQueryTranslator - Generated SQL query :ANS(X,Y) : [relationship\6(X18864918340,X,X18864918342,Y,X18864918344,works_at), persons\4(X,1,2,3), location\2(Y,1)] --> SELECT DISTINCT atom1.person_id as X, atom2.id as Y FROM PERSONS as atom1, RELATIONSHIP as atom0, LOCATION as atom2 WHERE atom0.x_id = atom1.person_id AND atom0.y_id = atom2.id AND atom1.first_name = atom2.address AND atom0.relationship = 'works_at'
+14:51:19.762 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism - SELECT DISTINCT atom1.person_id as X, atom2.id as Y FROM PERSONS as atom1, RELATIONSHIP as atom0, LOCATION as atom2 WHERE atom0.x_id = atom1.person_id AND atom0.y_id = atom2.id AND atom1.first_name = atom2.address AND atom0.relationship = 'works_at'
+10:47:13.805 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Execute query: ANS(X,Y) : [http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), location\2(Y,1)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), location\2(Y,1)]
+| ANS(X,Y) : [persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), location\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X9457227240,X,X9457227242,Y,X9457227244,works_at), http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [relationship\6(X9457227240,X,X9457227242,Y,X9457227244,works_at), http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X9457227240,X,X9457227242,Y,X9457227244,works_at), http://unisa.edu.au/KSE.owl/class#Person\1(X), location\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X9457227240,X,X9457227242,Y,X9457227244,works_at), http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [relationship\6(X9457227240,X,X9457227242,Y,X9457227244,works_at), http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X9457227240,X,X9457227242,Y,X9457227244,works_at), http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), location\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X9457227240,X,X9457227242,Y,X9457227244,works_at), persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [relationship\6(X9457227240,X,X9457227242,Y,X9457227244,works_at), persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X9457227240,X,X9457227242,Y,X9457227244,works_at), persons\4(X,1,2,3), location\2(Y,1)]
+| 
+10:47:13.811 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Solver: class fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism
+10:47:14.045 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.natural.NaturalConjunctiveQueryTranslator - Generated SQL query :ANS(X,Y) : [relationship\6(X9457227240,X,X9457227242,Y,X9457227244,works_at), persons\4(X,1,2,3), location\2(Y,1)] --> SELECT DISTINCT atom1.person_id as X, atom2.ID as Y FROM relationship as atom0, persons as atom1, Location as atom2 WHERE atom0.x_id = atom1.person_id AND atom0.y_id = atom2.ID AND atom1.first_name = atom2.Address AND atom0.relationship = 'works_at'
+10:47:14.046 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism - SELECT DISTINCT atom1.person_id as X, atom2.ID as Y FROM relationship as atom0, persons as atom1, Location as atom2 WHERE atom0.x_id = atom1.person_id AND atom0.y_id = atom2.ID AND atom1.first_name = atom2.Address AND atom0.relationship = 'works_at'
+11:00:44.718 [main] ERROR fr.lirmm.graphik.graal.store.rdbms.driver.SqliteDriver - org.sqlite.JDBC
+java.lang.ClassNotFoundException: org.sqlite.JDBC
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[?:1.8.0_152-ea]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_152-ea]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338) ~[?:1.8.0_152-ea]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_152-ea]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_152-ea]
+	at java.lang.Class.forName(Class.java:264) ~[?:1.8.0_152-ea]
+	at fr.lirmm.graphik.graal.store.rdbms.driver.SqliteDriver.openConnection(SqliteDriver.java:84) [classes/:?]
+	at fr.lirmm.graphik.graal.store.rdbms.driver.SqliteDriver.<init>(SqliteDriver.java:74) [classes/:?]
+	at ThirdTestWithoutKBOk.test1(ThirdTestWithoutKBOk.java:97) [classes/:?]
+	at ThirdTestWithoutKBOk.main(ThirdTestWithoutKBOk.java:52) [classes/:?]
+11:01:18.498 [main] ERROR fr.lirmm.graphik.graal.store.rdbms.driver.SqliteDriver - org.sqlite.JDBC
+java.lang.ClassNotFoundException: org.sqlite.JDBC
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[?:1.8.0_152-ea]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_152-ea]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338) ~[?:1.8.0_152-ea]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_152-ea]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_152-ea]
+	at java.lang.Class.forName(Class.java:264) ~[?:1.8.0_152-ea]
+	at fr.lirmm.graphik.graal.store.rdbms.driver.SqliteDriver.openConnection(SqliteDriver.java:84) [classes/:?]
+	at fr.lirmm.graphik.graal.store.rdbms.driver.SqliteDriver.<init>(SqliteDriver.java:74) [classes/:?]
+	at ThirdTestWithoutKBOk.test1(ThirdTestWithoutKBOk.java:97) [classes/:?]
+	at ThirdTestWithoutKBOk.main(ThirdTestWithoutKBOk.java:52) [classes/:?]
+11:02:43.713 [main] ERROR fr.lirmm.graphik.graal.store.rdbms.driver.SqliteDriver - org.sqlite.JDBC
+java.lang.ClassNotFoundException: org.sqlite.JDBC
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[?:1.8.0_152-ea]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_152-ea]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338) ~[?:1.8.0_152-ea]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_152-ea]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_152-ea]
+	at java.lang.Class.forName(Class.java:264) ~[?:1.8.0_152-ea]
+	at fr.lirmm.graphik.graal.store.rdbms.driver.SqliteDriver.openConnection(SqliteDriver.java:84) [classes/:?]
+	at fr.lirmm.graphik.graal.store.rdbms.driver.SqliteDriver.<init>(SqliteDriver.java:74) [classes/:?]
+	at ThirdTestWithoutKBOk.test1(ThirdTestWithoutKBOk.java:97) [classes/:?]
+	at ThirdTestWithoutKBOk.main(ThirdTestWithoutKBOk.java:52) [classes/:?]
+11:04:11.502 [main] ERROR fr.lirmm.graphik.graal.store.rdbms.driver.SqliteDriver - org.sqlite.JDBC
+java.lang.ClassNotFoundException: org.sqlite.JDBC
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[?:1.8.0_152-ea]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_152-ea]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338) ~[?:1.8.0_152-ea]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_152-ea]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_152-ea]
+	at java.lang.Class.forName(Class.java:264) ~[?:1.8.0_152-ea]
+	at fr.lirmm.graphik.graal.store.rdbms.driver.SqliteDriver.openConnection(SqliteDriver.java:84) [classes/:?]
+	at fr.lirmm.graphik.graal.store.rdbms.driver.SqliteDriver.<init>(SqliteDriver.java:74) [classes/:?]
+	at ThirdTestWithoutKBOk.test1(ThirdTestWithoutKBOk.java:97) [classes/:?]
+	at ThirdTestWithoutKBOk.main(ThirdTestWithoutKBOk.java:52) [classes/:?]
+11:05:19.834 [main] ERROR fr.lirmm.graphik.graal.store.rdbms.driver.SqliteDriver - org.sqlite.JDBC
+java.lang.ClassNotFoundException: org.sqlite.JDBC
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[?:1.8.0_152-ea]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_152-ea]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338) ~[?:1.8.0_152-ea]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_152-ea]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_152-ea]
+	at java.lang.Class.forName(Class.java:264) ~[?:1.8.0_152-ea]
+	at fr.lirmm.graphik.graal.store.rdbms.driver.SqliteDriver.openConnection(SqliteDriver.java:84) [classes/:?]
+	at fr.lirmm.graphik.graal.store.rdbms.driver.SqliteDriver.<init>(SqliteDriver.java:74) [classes/:?]
+	at ThirdTestWithoutKBOk.test1(ThirdTestWithoutKBOk.java:97) [classes/:?]
+	at ThirdTestWithoutKBOk.main(ThirdTestWithoutKBOk.java:52) [classes/:?]
+11:05:45.272 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Execute query: ANS(X,Y) : [http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), location\2(Y,1)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), location\2(Y,1)]
+| ANS(X,Y) : [persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), location\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X7098658510,X,X7098658512,Y,X7098658514,works_at), http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [relationship\6(X7098658510,X,X7098658512,Y,X7098658514,works_at), http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X7098658510,X,X7098658512,Y,X7098658514,works_at), http://unisa.edu.au/KSE.owl/class#Person\1(X), location\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X7098658510,X,X7098658512,Y,X7098658514,works_at), http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [relationship\6(X7098658510,X,X7098658512,Y,X7098658514,works_at), http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X7098658510,X,X7098658512,Y,X7098658514,works_at), http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), location\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X7098658510,X,X7098658512,Y,X7098658514,works_at), persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [relationship\6(X7098658510,X,X7098658512,Y,X7098658514,works_at), persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X7098658510,X,X7098658512,Y,X7098658514,works_at), persons\4(X,1,2,3), location\2(Y,1)]
+| 
+11:05:45.277 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Solver: class fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism
+11:05:45.531 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.natural.NaturalConjunctiveQueryTranslator - Generated SQL query :ANS(X,Y) : [relationship\6(X7098658510,X,X7098658512,Y,X7098658514,works_at), persons\4(X,1,2,3), location\2(Y,1)] --> SELECT DISTINCT atom1.person_id as X, atom2.id as Y FROM RELATIONSHIP as atom0, PERSONS as atom1, LOCATION as atom2 WHERE atom0.x_id = atom1.person_id AND atom0.y_id = atom2.id AND atom1.first_name = atom2.address AND atom0.relationship = 'works_at'
+11:05:45.532 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism - SELECT DISTINCT atom1.person_id as X, atom2.id as Y FROM RELATIONSHIP as atom0, PERSONS as atom1, LOCATION as atom2 WHERE atom0.x_id = atom1.person_id AND atom0.y_id = atom2.id AND atom1.first_name = atom2.address AND atom0.relationship = 'works_at'
+11:11:26.766 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Execute query: ANS(X,Y) : [http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), location\2(Y,1)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), location\2(Y,1)]
+| ANS(X,Y) : [persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/relationship#works_at\2(X,Y), location\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X12397599900,X,X12397599902,Y,X12397599904,works_at), http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [relationship\6(X12397599900,X,X12397599902,Y,X12397599904,works_at), http://unisa.edu.au/KSE.owl/class#Person\1(X), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X12397599900,X,X12397599902,Y,X12397599904,works_at), http://unisa.edu.au/KSE.owl/class#Person\1(X), location\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X12397599900,X,X12397599902,Y,X12397599904,works_at), http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [relationship\6(X12397599900,X,X12397599902,Y,X12397599904,works_at), http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X12397599900,X,X12397599902,Y,X12397599904,works_at), http://unisa.edu.au/KSE.owl/attribute#Age\2(X,1), location\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X12397599900,X,X12397599902,Y,X12397599904,works_at), persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/class#Location\1(Y)]
+| ANS(X,Y) : [relationship\6(X12397599900,X,X12397599902,Y,X12397599904,works_at), persons\4(X,1,2,3), http://unisa.edu.au/KSE.owl/attribute#Address\2(Y,1)]
+| ANS(X,Y) : [relationship\6(X12397599900,X,X12397599902,Y,X12397599904,works_at), persons\4(X,1,2,3), location\2(Y,1)]
+| 
+11:11:26.771 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Solver: class fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism
+11:11:27.984 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.natural.NaturalConjunctiveQueryTranslator - Generated SQL query :ANS(X,Y) : [relationship\6(X12397599900,X,X12397599902,Y,X12397599904,works_at), persons\4(X,1,2,3), location\2(Y,1)] --> SELECT DISTINCT atom1.person_id as X, atom2.id as Y FROM LOCATION as atom2, PERSONS as atom1, RELATIONSHIP as atom0 WHERE atom0.x_id = atom1.person_id AND atom0.y_id = atom2.id AND atom1.first_name = atom2.address AND atom0.relationship = 'works_at'
+11:11:27.984 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism - SELECT DISTINCT atom1.person_id as X, atom2.id as Y FROM LOCATION as atom2, PERSONS as atom1, RELATIONSHIP as atom0 WHERE atom0.x_id = atom1.person_id AND atom0.y_id = atom2.id AND atom1.first_name = atom2.address AND atom0.relationship = 'works_at'
+11:11:54.984 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Execute query: ANS(X,Y) : [relationship\6(X123975999013,X,X123975999015,Y,X123975999017,works_at), persons\4(X,1,2,3), location\2(Y,1)]
+| 
+11:11:54.987 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Solver: class fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism
+11:11:55.049 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.natural.NaturalConjunctiveQueryTranslator - Generated SQL query :ANS(X,Y) : [relationship\6(X123975999013,X,X123975999015,Y,X123975999017,works_at), persons\4(X,1,2,3), location\2(Y,1)] --> SELECT DISTINCT atom1.person_id as X, atom2.id as Y FROM LOCATION as atom2, PERSONS as atom1, RELATIONSHIP as atom0 WHERE atom0.x_id = atom1.person_id AND atom0.y_id = atom2.id AND atom1.first_name = atom2.address AND atom0.relationship = 'works_at'
+11:11:55.051 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism - SELECT DISTINCT atom1.person_id as X, atom2.id as Y FROM LOCATION as atom2, PERSONS as atom1, RELATIONSHIP as atom0 WHERE atom0.x_id = atom1.person_id AND atom0.y_id = atom2.id AND atom1.first_name = atom2.address AND atom0.relationship = 'works_at'
+16:34:02.412 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Execute query: ANS(X,Y) : [relationship\6(X108396244813,X,X108396244815,Y,X108396244817,works_at), persons\4(X,1,2,3), location\2(Y,1)]
+| 
+16:34:02.437 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Solver: class fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism
+16:34:02.582 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.natural.NaturalConjunctiveQueryTranslator - Generated SQL query :ANS(X,Y) : [relationship\6(X108396244813,X,X108396244815,Y,X108396244817,works_at), persons\4(X,1,2,3), location\2(Y,1)] --> SELECT DISTINCT atom1.person_id as X, atom2.id as Y FROM RELATIONSHIP as atom0, PERSONS as atom1, LOCATION as atom2 WHERE atom0.x_id = atom1.person_id AND atom0.y_id = atom2.id AND atom1.first_name = atom2.address AND atom0.relationship = 'works_at'
+16:34:02.583 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism - SELECT DISTINCT atom1.person_id as X, atom2.id as Y FROM RELATIONSHIP as atom0, PERSONS as atom1, LOCATION as atom2 WHERE atom0.x_id = atom1.person_id AND atom0.y_id = atom2.id AND atom1.first_name = atom2.address AND atom0.relationship = 'works_at'
+10:22:47.181 [main] ERROR fr.lirmm.graphik.graal.store.rdbms.driver.SqliteDriver - org.sqlite.JDBC
+java.lang.ClassNotFoundException: org.sqlite.JDBC
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[?:1.8.0_152-ea]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_152-ea]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338) ~[?:1.8.0_152-ea]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_152-ea]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_152-ea]
+	at java.lang.Class.forName(Class.java:264) ~[?:1.8.0_152-ea]
+	at fr.lirmm.graphik.graal.store.rdbms.driver.SqliteDriver.openConnection(SqliteDriver.java:84) [classes/:?]
+	at fr.lirmm.graphik.graal.store.rdbms.driver.SqliteDriver.<init>(SqliteDriver.java:74) [classes/:?]
+	at ThirdTestWithoutKBOk.test1(ThirdTestWithoutKBOk.java:97) [classes/:?]
+	at ThirdTestWithoutKBOk.main(ThirdTestWithoutKBOk.java:52) [classes/:?]
+10:25:48.999 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Execute query: ANS(X,Y) : [relationship\6(X123975999013,X,X123975999015,Y,X123975999017,works_at), persons\4(X,1,2,3), location\2(Y,1)]
+| 
+10:25:49.010 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Solver: class fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism
+10:25:49.014 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.natural.NaturalConjunctiveQueryTranslator - Generated SQL query :ANS(X,Y) : [relationship\6(X123975999013,X,X123975999015,Y,X123975999017,works_at), persons\4(X,1,2,3), location\2(Y,1)] --> SELECT DISTINCT atom1.person_id as X, atom2.ID as Y FROM relationship as atom0, persons as atom1, Location as atom2 WHERE atom0.x_id = atom1.person_id AND atom0.y_id = atom2.ID AND atom1.first_name = atom2.Address AND atom0.relationship = 'works_at'
+10:25:49.016 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism - SELECT DISTINCT atom1.person_id as X, atom2.ID as Y FROM relationship as atom0, persons as atom1, Location as atom2 WHERE atom0.x_id = atom1.person_id AND atom0.y_id = atom2.ID AND atom1.first_name = atom2.Address AND atom0.relationship = 'works_at'
+10:26:10.747 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Execute query: ANS(X,Y) : [relationship\6(X7085330637,X,X7085330639,Y,X70853306311,works_at), persons\4(X,1,2,3)]
+| 
+10:26:10.751 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Solver: class fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism
+10:26:10.753 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.natural.NaturalConjunctiveQueryTranslator - Generated SQL query :ANS(X,Y) : [relationship\6(X7085330637,X,X7085330639,Y,X70853306311,works_at), persons\4(X,1,2,3)] --> SELECT DISTINCT atom1.person_id as X, atom0.y_id as Y FROM persons as atom1, relationship as atom0 WHERE atom0.x_id = atom1.person_id AND atom0.relationship = 'works_at'
+10:26:10.754 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism - SELECT DISTINCT atom1.person_id as X, atom0.y_id as Y FROM persons as atom1, relationship as atom0 WHERE atom0.x_id = atom1.person_id AND atom0.relationship = 'works_at'
+13:08:10.792 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Execute query: ANS(X,Y) : [relationship\6(X12397599907,X,X12397599909,Y,X123975999011,works_at), persons\4(X,1,2,3)]
+| 
+13:08:10.798 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Solver: class fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism
+13:08:10.800 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.natural.NaturalConjunctiveQueryTranslator - Generated SQL query :ANS(X,Y) : [relationship\6(X12397599907,X,X12397599909,Y,X123975999011,works_at), persons\4(X,1,2,3)] --> SELECT DISTINCT atom1.person_id as X, atom0.y_id as Y FROM relationship as atom0, persons as atom1 WHERE atom0.x_id = atom1.person_id AND atom0.relationship = 'works_at'
+13:08:10.801 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism - SELECT DISTINCT atom1.person_id as X, atom0.y_id as Y FROM relationship as atom0, persons as atom1 WHERE atom0.x_id = atom1.person_id AND atom0.relationship = 'works_at'
+13:09:32.020 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Execute query: ANS(X,Y) : [relationship\6(X12397599900,X,X12397599902,Y,X12397599904,works_at), persons\4(X,1,2,3)]
+| 
+13:09:32.023 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Solver: class fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism
+13:09:32.025 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.natural.NaturalConjunctiveQueryTranslator - Generated SQL query :ANS(X,Y) : [relationship\6(X12397599900,X,X12397599902,Y,X12397599904,works_at), persons\4(X,1,2,3)] --> SELECT DISTINCT atom1.person_id as X, atom0.y_id as Y FROM relationship as atom0, persons as atom1 WHERE atom0.x_id = atom1.person_id AND atom0.relationship = 'works_at'
+13:09:32.026 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism - SELECT DISTINCT atom1.person_id as X, atom0.y_id as Y FROM relationship as atom0, persons as atom1 WHERE atom0.x_id = atom1.person_id AND atom0.relationship = 'works_at'
+13:09:53.839 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Execute query: ANS(X,Y) : [relationship\6(X7085330630,X,X7085330632,Y,X7085330634,works_at), persons\4(X,1,2,3)]
+| 
+13:09:53.845 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Solver: class fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism
+13:09:53.848 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.natural.NaturalConjunctiveQueryTranslator - Generated SQL query :ANS(X,Y) : [relationship\6(X7085330630,X,X7085330632,Y,X7085330634,works_at), persons\4(X,1,2,3)] --> SELECT DISTINCT atom1.person_id as X, atom0.y_id as Y FROM persons as atom1, relationship as atom0 WHERE atom0.x_id = atom1.person_id AND atom0.relationship = 'works_at'
+13:09:53.849 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism - SELECT DISTINCT atom1.person_id as X, atom0.y_id as Y FROM persons as atom1, relationship as atom0 WHERE atom0.x_id = atom1.person_id AND atom0.relationship = 'works_at'
+13:18:29.888 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Execute query: ANS(X,Y) : [relationship\6(X12397599900,X,X12397599902,Y,X12397599904,works_at), persons\4(X,1,2,3)]
+| 
+13:18:29.906 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Solver: class fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism
+13:18:29.910 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.natural.NaturalConjunctiveQueryTranslator - Generated SQL query :ANS(X,Y) : [relationship\6(X12397599900,X,X12397599902,Y,X12397599904,works_at), persons\4(X,1,2,3)] --> SELECT DISTINCT atom1.person_id as X, atom0.y_id as Y FROM relationship as atom0, persons as atom1 WHERE atom0.x_id = atom1.person_id AND atom0.relationship = 'works_at'
+13:18:29.914 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism - SELECT DISTINCT atom1.person_id as X, atom0.y_id as Y FROM relationship as atom0, persons as atom1 WHERE atom0.x_id = atom1.person_id AND atom0.relationship = 'works_at'
+14:53:48.845 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Execute query: ANS(X,Y) : [relationship\6(X12397599900,X,X12397599902,Y,X12397599904,works_at), persons\4(X,1,2,3)]
+| 
+14:53:48.861 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Solver: class fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism
+14:53:48.880 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.natural.NaturalConjunctiveQueryTranslator - Generated SQL query :ANS(X,Y) : [relationship\6(X12397599900,X,X12397599902,Y,X12397599904,works_at), persons\4(X,1,2,3)] --> SELECT DISTINCT atom1.person_id as X, atom0.y_id as Y FROM RELATIONSHIP as atom0, PERSONS as atom1 WHERE atom0.x_id = atom1.person_id AND atom0.relationship = 'works_at'
+14:53:48.882 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism - SELECT DISTINCT atom1.person_id as X, atom0.y_id as Y FROM RELATIONSHIP as atom0, PERSONS as atom1 WHERE atom0.x_id = atom1.person_id AND atom0.relationship = 'works_at'
+14:53:59.140 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Execute query: ANS(X,Y) : [relationship\6(X7085330630,X,X7085330632,Y,X7085330634,works_at), persons\4(X,1,2,3)]
+| 
+14:53:59.144 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Solver: class fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism
+14:53:59.181 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.natural.NaturalConjunctiveQueryTranslator - Generated SQL query :ANS(X,Y) : [relationship\6(X7085330630,X,X7085330632,Y,X7085330634,works_at), persons\4(X,1,2,3)] --> SELECT DISTINCT atom1.person_id as X, atom0.y_id as Y FROM PERSONS as atom1, RELATIONSHIP as atom0 WHERE atom0.x_id = atom1.person_id AND atom0.relationship = 'works_at'
+14:53:59.182 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism - SELECT DISTINCT atom1.person_id as X, atom0.y_id as Y FROM PERSONS as atom1, RELATIONSHIP as atom0 WHERE atom0.x_id = atom1.person_id AND atom0.relationship = 'works_at'
+17:03:35.189 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Execute query: ANS(FN,LN,Age,Z) : [relationship\6(X12397599900,X,X12397599902,Y,X12397599904,works_at), persons\4(X,1,2,Age), persons\4(X,FN,2,3), persons\4(X,1,LN,3), location\2(Y,Z)]
+| 
+17:03:35.196 [main] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Solver: class fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism
+17:03:35.254 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.natural.NaturalConjunctiveQueryTranslator - Generated SQL query :ANS(FN,LN,Age,Z) : [relationship\6(X12397599900,X,X12397599902,Y,X12397599904,works_at), persons\4(X,1,2,Age), persons\4(X,FN,2,3), persons\4(X,1,LN,3), location\2(Y,Z)] --> SELECT DISTINCT atom2.first_name as FN, atom3.last_name as LN, atom1.age as Age, atom4.address as Z FROM LOCATION as atom4, RELATIONSHIP as atom0, PERSONS as atom2, PERSONS as atom3, PERSONS as atom1 WHERE atom0.x_id = atom1.person_id AND atom1.person_id = atom2.person_id AND atom1.last_name = atom2.last_name AND atom2.person_id = atom3.person_id AND atom1.first_name = atom3.first_name AND atom2.age = atom3.age AND atom0.y_id = atom4.id AND atom0.relationship = 'works_at'
+17:03:35.256 [main] DEBUG fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism - SELECT DISTINCT atom2.first_name as FN, atom3.last_name as LN, atom1.age as Age, atom4.address as Z FROM LOCATION as atom4, RELATIONSHIP as atom0, PERSONS as atom2, PERSONS as atom3, PERSONS as atom1 WHERE atom0.x_id = atom1.person_id AND atom1.person_id = atom2.person_id AND atom1.last_name = atom2.last_name AND atom2.person_id = atom3.person_id AND atom1.first_name = atom3.first_name AND atom2.age = atom3.age AND atom0.y_id = atom4.id AND atom0.relationship = 'works_at'
+11:19:11.000 [http-nio-8091-exec-1] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Execute query: ANS(FN,LN,Age,Z) : [relationship\6(X10943577990,X,X10943577992,Y,X10943577994,works_at), persons\4(X,1,2,Age), persons\4(X,FN,2,3), persons\4(X,1,LN,3), location\2(Y,Z)]
+| 
+11:19:11.004 [http-nio-8091-exec-1] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Solver: class fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism
+11:19:11.055 [http-nio-8091-exec-1] DEBUG fr.lirmm.graphik.graal.store.rdbms.natural.NaturalConjunctiveQueryTranslator - Generated SQL query :ANS(FN,LN,Age,Z) : [relationship\6(X10943577990,X,X10943577992,Y,X10943577994,works_at), persons\4(X,1,2,Age), persons\4(X,FN,2,3), persons\4(X,1,LN,3), location\2(Y,Z)] --> SELECT DISTINCT atom2.first_name as FN, atom3.last_name as LN, atom1.age as Age, atom4.address as Z FROM LOCATION as atom4, PERSONS as atom2, PERSONS as atom3, PERSONS as atom1, RELATIONSHIP as atom0 WHERE atom0.x_id = atom1.person_id AND atom1.person_id = atom2.person_id AND atom1.last_name = atom2.last_name AND atom2.person_id = atom3.person_id AND atom1.first_name = atom3.first_name AND atom2.age = atom3.age AND atom0.y_id = atom4.id AND atom0.relationship = 'works_at'
+11:19:11.058 [http-nio-8091-exec-1] DEBUG fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism - SELECT DISTINCT atom2.first_name as FN, atom3.last_name as LN, atom1.age as Age, atom4.address as Z FROM LOCATION as atom4, PERSONS as atom2, PERSONS as atom3, PERSONS as atom1, RELATIONSHIP as atom0 WHERE atom0.x_id = atom1.person_id AND atom1.person_id = atom2.person_id AND atom1.last_name = atom2.last_name AND atom2.person_id = atom3.person_id AND atom1.first_name = atom3.first_name AND atom2.age = atom3.age AND atom0.y_id = atom4.id AND atom0.relationship = 'works_at'
+11:19:11.153 [http-nio-8091-exec-1] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Execute query: ANS(FN,LN,Age,Z) : [relationship\6(X10943577997,X,X10943577999,Y,X109435779911,works_at), persons\4(X,1,2,Age), persons\4(X,FN,2,3), persons\4(X,1,LN,3), location\2(Y,Z)]
+| 
+11:19:11.153 [http-nio-8091-exec-1] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Solver: class fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism
+11:19:11.157 [http-nio-8091-exec-1] DEBUG fr.lirmm.graphik.graal.store.rdbms.natural.NaturalConjunctiveQueryTranslator - Generated SQL query :ANS(FN,LN,Age,Z) : [relationship\6(X10943577997,X,X10943577999,Y,X109435779911,works_at), persons\4(X,1,2,Age), persons\4(X,FN,2,3), persons\4(X,1,LN,3), location\2(Y,Z)] --> SELECT DISTINCT atom2.first_name as FN, atom3.last_name as LN, atom1.age as Age, atom4.Address as Z FROM Location as atom4, relationship as atom0, persons as atom2, persons as atom3, persons as atom1 WHERE atom0.x_id = atom1.person_id AND atom1.person_id = atom2.person_id AND atom1.last_name = atom2.last_name AND atom2.person_id = atom3.person_id AND atom1.first_name = atom3.first_name AND atom2.age = atom3.age AND atom0.y_id = atom4.ID AND atom0.relationship = 'works_at'
+11:19:11.157 [http-nio-8091-exec-1] DEBUG fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism - SELECT DISTINCT atom2.first_name as FN, atom3.last_name as LN, atom1.age as Age, atom4.Address as Z FROM Location as atom4, relationship as atom0, persons as atom2, persons as atom3, persons as atom1 WHERE atom0.x_id = atom1.person_id AND atom1.person_id = atom2.person_id AND atom1.last_name = atom2.last_name AND atom2.person_id = atom3.person_id AND atom1.first_name = atom3.first_name AND atom2.age = atom3.age AND atom0.y_id = atom4.ID AND atom0.relationship = 'works_at'
+11:19:11.204 [http-nio-8091-exec-1] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Written [edu.unisa.ILE.FSA.InternalDataStructure.FindEntitiesResult@1b38a0f8] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@b0964b2]
+11:19:11.204 [http-nio-8091-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+11:19:11.204 [http-nio-8091-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+11:19:11.206 [http-nio-8091-exec-1] DEBUG org.springframework.boot.web.filter.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@11f36b5e
+11:21:02.361 [Thread-10] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3e8c3cb: startup date [Wed Oct 10 11:19:03 ACDT 2018]; root of context hierarchy
+11:21:02.362 [Thread-10] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'spring.liveBeansView.mbeanDomain' in [systemProperties] with type [String]
+11:22:50.293 [http-nio-8091-exec-1] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Execute query: ANS(FN,LN,Age,Z) : [relationship\6(X2538524720,X,X2538524722,Y,X2538524724,works_at), persons\4(X,1,2,Age), persons\4(X,FN,2,3), persons\4(X,1,LN,3), location\2(Y,Z)]
+| 
+11:22:50.297 [http-nio-8091-exec-1] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Solver: class fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism
+11:22:50.349 [http-nio-8091-exec-1] DEBUG fr.lirmm.graphik.graal.store.rdbms.natural.NaturalConjunctiveQueryTranslator - Generated SQL query :ANS(FN,LN,Age,Z) : [relationship\6(X2538524720,X,X2538524722,Y,X2538524724,works_at), persons\4(X,1,2,Age), persons\4(X,FN,2,3), persons\4(X,1,LN,3), location\2(Y,Z)] --> SELECT DISTINCT atom2.first_name as FN, atom3.last_name as LN, atom1.age as Age, atom4.address as Z FROM LOCATION as atom4, RELATIONSHIP as atom0, PERSONS as atom2, PERSONS as atom3, PERSONS as atom1 WHERE atom0.x_id = atom1.person_id AND atom1.person_id = atom2.person_id AND atom1.last_name = atom2.last_name AND atom2.person_id = atom3.person_id AND atom1.first_name = atom3.first_name AND atom2.age = atom3.age AND atom0.y_id = atom4.id AND atom0.relationship = 'works_at'
+11:22:50.351 [http-nio-8091-exec-1] DEBUG fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism - SELECT DISTINCT atom2.first_name as FN, atom3.last_name as LN, atom1.age as Age, atom4.address as Z FROM LOCATION as atom4, RELATIONSHIP as atom0, PERSONS as atom2, PERSONS as atom3, PERSONS as atom1 WHERE atom0.x_id = atom1.person_id AND atom1.person_id = atom2.person_id AND atom1.last_name = atom2.last_name AND atom2.person_id = atom3.person_id AND atom1.first_name = atom3.first_name AND atom2.age = atom3.age AND atom0.y_id = atom4.id AND atom0.relationship = 'works_at'
+11:22:50.415 [http-nio-8091-exec-1] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Execute query: ANS(FN,LN,Age,Z) : [relationship\6(X2538524727,X,X2538524729,Y,X25385247211,works_at), persons\4(X,1,2,Age), persons\4(X,FN,2,3), persons\4(X,1,LN,3), location\2(Y,Z)]
+| 
+11:22:50.416 [http-nio-8091-exec-1] DEBUG fr.lirmm.graphik.graal.homomorphism.SmartHomomorphism - Solver: class fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism
+11:22:50.419 [http-nio-8091-exec-1] DEBUG fr.lirmm.graphik.graal.store.rdbms.natural.NaturalConjunctiveQueryTranslator - Generated SQL query :ANS(FN,LN,Age,Z) : [relationship\6(X2538524727,X,X2538524729,Y,X25385247211,works_at), persons\4(X,1,2,Age), persons\4(X,FN,2,3), persons\4(X,1,LN,3), location\2(Y,Z)] --> SELECT DISTINCT atom2.first_name as FN, atom3.last_name as LN, atom1.age as Age, atom4.Address as Z FROM Location as atom4, persons as atom2, relationship as atom0, persons as atom3, persons as atom1 WHERE atom0.x_id = atom1.person_id AND atom1.person_id = atom2.person_id AND atom1.last_name = atom2.last_name AND atom2.person_id = atom3.person_id AND atom1.first_name = atom3.first_name AND atom2.age = atom3.age AND atom0.y_id = atom4.ID AND atom0.relationship = 'works_at'
+11:22:50.420 [http-nio-8091-exec-1] DEBUG fr.lirmm.graphik.graal.store.rdbms.homomorphism.SqlUCQHomomorphism - SELECT DISTINCT atom2.first_name as FN, atom3.last_name as LN, atom1.age as Age, atom4.Address as Z FROM Location as atom4, persons as atom2, relationship as atom0, persons as atom3, persons as atom1 WHERE atom0.x_id = atom1.person_id AND atom1.person_id = atom2.person_id AND atom1.last_name = atom2.last_name AND atom2.person_id = atom3.person_id AND atom1.first_name = atom3.first_name AND atom2.age = atom3.age AND atom0.y_id = atom4.ID AND atom0.relationship = 'works_at'
+11:22:50.469 [http-nio-8091-exec-1] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Written [edu.unisa.ILE.FSA.InternalDataStructure.FindEntitiesResult@6d99ecb2] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@537b32ef]
+11:22:50.470 [http-nio-8091-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+11:22:50.470 [http-nio-8091-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+11:22:50.472 [http-nio-8091-exec-1] DEBUG org.springframework.boot.web.filter.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@7b26d964
+13:52:32.728 [Thread-10] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3e8c3cb: startup date [Wed Oct 10 11:22:42 ACDT 2018]; root of context hierarchy
+13:52:32.729 [Thread-10] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'spring.liveBeansView.mbeanDomain' in [systemProperties] with type [String]
+12:26:25.561 [http-nio-8091-exec-3] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected end-of-input: expected close marker for Object (start marker at [Source: java.io.PushbackInputStream@6d99dd1e; line: 1, column: 1]); nested exception is com.fasterxml.jackson.core.io.JsonEOFException: Unexpected end-of-input: expected close marker for Object (start marker at [Source: java.io.PushbackInputStream@6d99dd1e; line: 1, column: 1])
+ at [Source: java.io.PushbackInputStream@6d99dd1e; line: 1, column: 905]
+14:11:53.167 [http-nio-8091-exec-1] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at edu.unisa.ILE.FSA.CDMMappingRepository.MRFunctions.conduct(MRFunctions.java:54) ~[classes/:?]
+	at edu.unisa.ILE.FSA.EnginePortal.MRController.query(MRController.java:50) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_101]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_101]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_101]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_101]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_101]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]

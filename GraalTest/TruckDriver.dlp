@@ -1,0 +1,25 @@
+@prefix : <>
+@prefix class: <http://unisa.edu.au/KSE.owl/class#>
+@prefix attribute: <http://unisa.edu.au/KSE.owl/attribute#>
+@prefix relationship: <http://unisa.edu.au/KSE.owl/relationship#>
+
+class:Person(PID) :- attribute:givenName(PID,GN).
+class:Person(PID) :- attribute:lastName(PID,LN).
+class:Vehicle(VID) :- attribute:hasRegNo(VID,RegNo).
+
+class:Vehicle(VID) :- class:PassengerVehicle(VID).
+class:Vehicle(VID) :- class:Truck(VID).
+class:Truck(VID) :- class:LargeTruck(VID).
+
+class:Vehicle(VID) :- class:Person(PID), relationship:uses(PID,VID).
+
+attribute:givenName(PID,GN) :- :driver(PID,GN,LN,Gender,DOB).
+attribute:lastName(PID,LN) :- :driver(PID,GN,LN,Gender,DOB).
+attribute:hasRegNo(VID,RegNo) :- :truck(VID,RegNo,PID,Type).
+attribute:hasRegNo(VID,RegNo) :- :passengerVehicle(VID,RegNo,PID,Type).
+
+class:PassengerVehicle(PID) :- :truck(RegNo,PID,Type).
+class:Truck(PID) :- :truck(RegNo,PID,Type).
+class:LargeTruck(PID) :- :truck(RegNo,PID,Type), Type = <large>.
+relationship:uses(PID,VID) :- :truck(VID,RegNo,PID,Type).
+relationship:uses(PID,VID) :- :passengerVehicle(VID,RegNo,PID,Type).
